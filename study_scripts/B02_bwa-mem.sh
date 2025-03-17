@@ -1,0 +1,1 @@
+for i in `cat list_name`;do echo "#"\!/bin/bash >> ${i}_02.sh;printf "/public/software/env01/bin/bwa mem -t 2 -M ./reference/Zea_mays.AGPv4.dna_sm.toplevel.fa  ./raw_reads/${i}_clean_R1.fq.gz  ./raw_reads/${i}_clean_R2.fq.gz  >./clean_bam/${i}_clean.sam"  >> ${i}_02.sh;done

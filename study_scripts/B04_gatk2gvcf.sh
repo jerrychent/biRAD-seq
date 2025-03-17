@@ -1,0 +1,1 @@
+for i in `cat list_name`;do echo '#'\!/bin/bash >> ${i}_04.sh;printf "/public/software/env01/bin/gatk HaplotypeCaller --emit-ref-confidence GVCF -R ./reference/Zea_mays.AGPv4.dna_sm.toplevel.fa -I ./bam/${i}.bam -O ../bam/${i}.g.vcf.gz" >> ${i}_04.sh;done
