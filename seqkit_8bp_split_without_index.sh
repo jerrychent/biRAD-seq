@@ -1,3 +1,4 @@
+# usage：bash seqkit_8bp_split_without_index.sh <sequences.fasta> <reads_R1.fq.gz> <reads_R2.fq.gz> <output_prefix>
 #!/bin/bash
 
 # 参数检查
