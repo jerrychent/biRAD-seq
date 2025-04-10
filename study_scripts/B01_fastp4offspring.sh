@@ -1,1 +1,0 @@
-for i in `cat list_name`;do echo "#"\!/bin/bash >> ${i}_01.sh;printf "/public/home/zhuzhenghang/miniconda3/envs/zhu2/bin/fastp -q 20 -l 30 -u 40 -i ./raw_reads/${i}.R1.fastq.gz  -I ./raw_reads/${i}.R2.fastq.gz  -o ./raw_reads/${i}_clean_R1.fq.gz -O ./raw_reads/${i}_clean_R2.fq.gz -h ./raw_reads/${i}_fastp_report.html >./raw_reads/${i}_fastp_report.txt" >> ${i}_01.sh;done
